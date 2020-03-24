@@ -1,7 +1,6 @@
 {
-    "name": "lyra",
-    "description": "A premium publication theme for Ghost.",
-    "demo": "https://lyra.ghost.io",
+    "name": "lyra-strictly-private",
+    "description": "A premium publication theme for Ghost in which non public content is not displayed.",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
@@ -21,9 +20,8 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Till Gartner",
+        "email": "till.gartner@gmail.com"
     },
     "gpm": {
         "type": "theme",
@@ -35,14 +33,15 @@
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "member",
+        "paid",
+        "premium"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/tillg/Lyra-strictly-private"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.4.1",
         "autoprefixer": "9.7.3",

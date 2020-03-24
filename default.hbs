@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{@site.lang}}">
+
 <head>
 
     {{!-- Document Settings --}}
@@ -18,6 +19,7 @@
     {{ghost_head}}
 
 </head>
+
 <body class="{{body_class}}">
 
     <div class="site-wrapper">
@@ -35,19 +37,22 @@
                     {{#if @site.secondary_navigation}}
                     {{navigation type="secondary"}}
                     {{/if}}
-                    {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
-                    {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+                    {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank"
+                        rel="noopener">Facebook</a>{{/if}}
+                    {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank"
+                        rel="noopener">Twitter</a>{{/if}}
                 </section>
                 <nav class="site-footer-nav">
                     Published with
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    {{#if @member }}Member{{/if}}{{#if @member.paid}}, Paid member{{/if}}
                 </nav>
             </div>
         </footer>
 
     </div>
 
-   {{> "notifications"}}
+    {{> "notifications"}}
 
 
 
@@ -64,11 +69,9 @@
 
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
 
     <script src="{{asset "built/infinitescroll.js"}}"></script>
@@ -123,18 +126,18 @@
             });
 
             // Reset form on opening subscrion overlay
-            $('.subscribe-button').click(function() {
+            $('.subscribe-button').click(function () {
                 $('.subscribe-overlay form').removeClass();
                 $('.subscribe-email').val('');
             });
 
             // Account navigation menu
-            $('.account-menu-avatar').click(function(event) {
+            $('.account-menu-avatar').click(function (event) {
                 $(this).toggleClass('active');
                 event.stopPropagation();
             });
 
-            $('.account-menu-dropdown').click(function(event) {
+            $('.account-menu-dropdown').click(function (event) {
                 event.stopPropagation();
             });
 
@@ -151,4 +154,5 @@
     {{ghost_foot}}
 
 </body>
+
 </html>
