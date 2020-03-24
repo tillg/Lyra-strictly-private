@@ -24,3 +24,14 @@ With the Lyra-strictly-private theme the following visibility rules apply:
 5. Upload the `routes.yaml` from this theme
 
 ![screenshot](https://user-images.githubusercontent.com/120485/67228748-1fdd1400-f464-11e9-921f-ecbf5f412ed5.png)
+
+## To do
+
+Things that should still be done:
+
+-   When reading a post, in the footer we see the preview (aka exerpt) of the previeus and next post - even if these are not visble to me.
+-   The header text should be right aligned - as I have a logo or picture on the left side most of the time.
+-   The visibility on the home page should be make really dependant on my status, i.e. differ if
+    -   I am not logged in,
+    -   I am logged in as a member that is not a paid member, or if
+    -   I am logged in as a paid member.
